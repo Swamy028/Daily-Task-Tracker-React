@@ -13,8 +13,8 @@ const RegisterPage = () => {
 
   const navigate=useNavigate();
 
-  const handleSubmit = async() => {
-    
+  const handleSubmit = async(e) => {
+     e.preventDefault();
     try {
       const res=await api.post('/users/register',{name,email,password})
       setResponse("Registered Successfully")
@@ -30,8 +30,8 @@ const RegisterPage = () => {
   return (
     <div>
 
-      <form  className='form login-form'>
-        <h2>Login page</h2>
+      <form  className='form login-form' onSubmit={handleSubmit}>
+        <h2>Register page</h2>
         <div className='field'>
           <label htmlFor="">Name</label>
           <input type="text" required placeholder='enter ur name' value={name} onChange={(e)=>setName(e.target.value)} />
@@ -50,7 +50,7 @@ const RegisterPage = () => {
         </div>
         {error&&<p>{error}</p>}
         {response&&<p>{response}</p>}
-        <button type='button' onClick={handleSubmit}>Register</button>
+        <button type='submit'>Register</button>
         <p>if you're already registered?  <Link to='/login'>Login</Link></p>
       </form>
     </div>
