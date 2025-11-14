@@ -22,9 +22,8 @@ const LoginPage = () => {
       const token=response.data.token
 
       setTimeout(()=>login(user,token),500)
-      
       //setTimeout(()=>navigate('/'),2000)
-        setResponse("Login success")
+      setResponse("Login success")
       setEmail("")
       setPassword("")
       setError("");
@@ -36,7 +35,7 @@ const LoginPage = () => {
   return (
     <div>
 
-      <form action={handleSubmit} className='form login-form'>
+      <form onSubmit={handleSubmit} className='form login-form'>
         <h2>Login page</h2>
         <div className='field'>
           <label htmlFor="email">Email</label>
