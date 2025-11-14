@@ -16,7 +16,7 @@ const LoginPage = () => {
 
   const handleSubmit=async()=>{
     try {
-      const response=await api.post('users/login',{email,password});
+      const response=await api.post('/users/login',{email,password});
       const user=response.data.user
       const token=response.data.token
 
