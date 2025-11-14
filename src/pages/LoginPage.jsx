@@ -20,7 +20,7 @@ const LoginPage = () => {
       const user=response.data.user
       const token=response.data.token
 
-      setTimeout(()=>login(user,token),1000)
+      setTimeout(()=>login(user,token),500)
       
       //setTimeout(()=>navigate('/'),2000)
         setResponse("Login success")

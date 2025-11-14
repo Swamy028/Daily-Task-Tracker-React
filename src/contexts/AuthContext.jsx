@@ -13,7 +13,7 @@ const AuthContextProvider = ({children}) => {
   useEffect(()=>{
 
     if(!token){
-      setTimeout(()=>setLoading(false),300)
+      setLoading(false)
       return;
     }
 
@@ -26,7 +26,7 @@ const AuthContextProvider = ({children}) => {
   },[])
 
   const login=(userData,token)=>{
-    console.log("login in auth context")
+    //console.log("login in auth context")
     localStorage.setItem('token',token);
     setToken(token); //added
     setUser(userData);
