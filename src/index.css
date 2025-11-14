@@ -1,0 +1,183 @@
+.login-form {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px 25px 10px;
+  border-radius: 16px;
+  background-color: rgb(250, 248, 248);
+  margin: auto;
+  margin-top: 50px;
+
+  .field {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 20px;
+    gap: 5px;
+
+    input {
+      font-size: 1rem;
+      padding: 5px 8px;
+
+    }
+  }
+
+  button {
+    padding: 6px 15px;
+    border-radius: 8px;
+    width: 30%;
+    border: none;
+    background-color: rgb(156, 156, 232);
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.error {
+  color: red;
+}
+
+.res {
+  color: green;
+}
+
+.showpassword {
+  width: 90%;
+  text-align: left;
+  display: flex;
+  gap: 3px;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top: 3px;
+}
+
+/* Dashboard */
+.dashboard {
+  max-width: 600px;
+  padding: 8px;
+  border: 1px solid black;
+  margin: auto;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    cursor: pointer;
+    padding: 5px 8px;
+  }
+}
+
+.task-form {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+
+  input {
+    flex: 1;
+    padding: 5px;
+    outline: none;
+  }
+}
+
+.tasks-div {
+  border: 1px solid black;
+  padding: 8px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-form,
+.auth-container form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.task-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+   .check-box-edit{
+    display: flex;
+    align-items: center;
+    gap:3px;
+   }
+   input{
+    outline: none;
+    padding: 3px;
+   }
+
+  button {
+    cursor: pointer;
+    border: none;
+    padding:3px 5px;
+    margin-right: 5px;
+  }
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:7px;
+  align-items: center;
+  margin-bottom: 15px;
+  p{
+    margin: 0;
+    font-size: 13px;
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e4e4e4;
+  border-radius:20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+}
+
+.task-status{
+  margin: auto;
+  display: flex;
+  gap:8px;
+  justify-content: center;
+  margin-bottom: 15px;
+  
+.active{
+  background-color: blue;
+  border-radius: 5px;
+}
+  button{
+    font-size: 11px;
+    border:none;
+    background: none;
+    cursor: pointer;
+     padding: 3px 5px;
+  }
+}
+.task-status button:hover{
+  background-color: rgb(248, 242, 242);
+ 
+}
