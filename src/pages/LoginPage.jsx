@@ -14,7 +14,8 @@ const LoginPage = () => {
 
   const {login}=useAuthContext();
 
-  const handleSubmit=async()=>{
+  const handleSubmit=async(e)=>{
+    e.preventDefault()
     try {
       const response=await api.post('/users/login',{email,password});
       const user=response.data.user
